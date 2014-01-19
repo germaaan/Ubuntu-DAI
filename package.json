@@ -1,0 +1,7 @@
+{
+	"name": "docker-ubuntu-dai",
+	"private": false,
+	"version": "1.0",
+	"description": "Imagen de Ubuntu con las herramientas necesarias para DAI usando docker",
+	"author": "German Martinez <germaaan@gmail.com>",
+}
