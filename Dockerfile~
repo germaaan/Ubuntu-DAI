@@ -9,11 +9,11 @@ RUN echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen
 RUN apt-get update
 RUN apt-get -y install apt-utils
 RUN apt-get -y install python python-setuptools mongodb-10gen python-django
-RUN easy_install web.py
-RUN easy_install mako
-RUN easy_install pymongo
-RUN easy_install feedparser
-RUN easy_install tweepy 
+RUN sudo easy_install web.py
+RUN sudo easy_install mako
+RUN sudo easy_install pymongo
+RUN sudo easy_install feedparser
+RUN sudo easy_install tweepy 
 
 # Configurar MongoDB
 CMD ["/usr/bin/mongod", "--config", "/etc/mongodb.conf"] 
